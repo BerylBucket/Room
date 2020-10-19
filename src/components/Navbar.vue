@@ -36,7 +36,7 @@ export default {
 .navbar a {
   color: #f5f5f5;
 }
-@media (max-width: 376px) {
+@media (max-width: 599px) {
   .navbar .logo {
     display: block;
     margin: auto;
