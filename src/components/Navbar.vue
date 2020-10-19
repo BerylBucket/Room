@@ -12,6 +12,16 @@
 </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      active: false
+    };
+  }
+}
+</script>
+
 <style scoped>
 .navbar a {
   color: #f5f5f5;
