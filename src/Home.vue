@@ -60,7 +60,7 @@ export default {
   }
   .aboutCard {
     grid-area: about;
-    padding: 70px 14vw;
+    padding: 70px 19vw;
   }
   .aboutImg1,
   .aboutImg2 {
