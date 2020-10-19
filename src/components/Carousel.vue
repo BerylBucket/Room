@@ -10,14 +10,14 @@
         <h1>{{ curH1 }}</h1>
         <p>{{ curP }}</p>
         <a class="shopNowLink"
-          >shop now <img src="~/assets/icons/icon-arrow.svg" alt="shop now"
+          >shop now <img src="../../assets/icons/icon-arrow.svg" alt="shop now"
         /></a>
         <div class="controls">
           <a @click="changeSlide(-1)"
-            ><img src="~/assets/icons/icon-angle-left.svg" alt="previous"
+            ><img src="../../assets/icons/icon-angle-left.svg" alt="previous"
           /></a>
           <a @click="changeSlide(1)">
-            <img src="~/assets/icons/icon-angle-right.svg" alt="next" />
+            <img src="../../assets/icons/icon-angle-right.svg" alt="next" />
           </a>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default {
       } else {
         size = "mobile-";
       }
-      var url = "url(" + require("~/assets/images/" + size + this.curImg) + ")";
+      var url = "url(" + require("../../assets/images/" + size + this.curImg) + ")";
       return { "background-image": url, "background-size": "100% 100%" };
     },
   },
