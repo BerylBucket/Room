@@ -1,23 +1,28 @@
 <template>
   <section id="about">
-  <div class="aboutImg1"></div>
-  <div class="aboutCard">
-    <h2>About our furniture</h2>
-    <p>Our multifunctional collection blends design and function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests and what
-      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-      or anything in between. Product specialists are available to help you create your dream space.</p>
-  </div>
-  <div class="aboutImg2"></div>
-</section>
+    <div class="aboutImg1"></div>
+    <div class="aboutCard">
+      <h2>About our furniture</h2>
+      <p>
+        Our multifunctional collection blends design and function to suit your
+        individual taste. Make each room unique, or pick a cohesive theme that
+        best express your interests and what inspires you. Find the furniture
+        pieces you need, from traditional to contemporary styles or anything in
+        between. Product specialists are available to help you create your dream
+        space.
+      </p>
+    </div>
+    <div class="aboutImg2"></div>
+  </section>
 </template>
 
 <style scoped>
-  .aboutImg1, .aboutImg2 {
+.aboutImg1,
+.aboutImg2 {
   background-size: 100% 100%;
   height: 78vw;
 }
-.aboutImg1{
+.aboutImg1 {
   background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-dark.jpg");
 }
 .aboutImg2 {
