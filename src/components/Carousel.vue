@@ -168,7 +168,7 @@ p {
     padding: 45px 40px;
   }
   .slide {
-    padding: 100px 14vw;
+    padding: 100px 19vw;
   }
   .controls {
     top: -66px;
