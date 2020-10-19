@@ -2,16 +2,16 @@
   <div class="navbar">
     <img
       class="logo"
-      src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/logo.svg"
+      src="/assets/logo.svg"
     />
     <a class="burger" @click="active = true"
       ><img
-        src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/icons/burger.svg"
+        src="/assets/icons/burger.svg"
     /></a>
     <div class="links" :class="{ active: active }">
       <a class="close" @click="active = false"
         ><img
-          src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/icons/icon-close.svg"
+          src="/assets/icons/icon-close.svg"
           alt="close"
       /></a>
       <a>home</a>
