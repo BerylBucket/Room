@@ -201,9 +201,9 @@ p {
   .slide {
     padding: min(8.33vw, 120px) min(6.25vw, 90px);
   }
-  h1{
-   font-size: 32px;
-}
+  h1 {
+    font-size: 32px;
+  }
   p {
     margin-top: 25px;
   }
