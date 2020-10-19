@@ -114,7 +114,7 @@ export default {
   position: relative;
 }
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
 }
 p {
@@ -201,6 +201,9 @@ p {
   .slide {
     padding: min(8.33vw, 120px) min(6.25vw, 90px);
   }
+  h1{
+   font-size: 32px;
+}
   p {
     margin-top: 25px;
   }
