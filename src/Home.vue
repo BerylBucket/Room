@@ -18,10 +18,10 @@
 </template>
 
 <script>
-  import Carousel from "./Carousel";
-  export default {
-   components: { Carousel }
-}
+import Carousel from "./Carousel";
+export default {
+  components: { Carousel },
+};
 </script>
 
 <style scoped>
