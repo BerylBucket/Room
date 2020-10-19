@@ -1,4 +1,5 @@
 <template>
+  <Carousel></Carousel>
   <section id="about">
     <div class="aboutImg1"></div>
     <div class="aboutCard">
@@ -15,6 +16,13 @@
     <div class="aboutImg2"></div>
   </section>
 </template>
+
+<script>
+  import Carousel from "./Carousel";
+  export default {
+   components: { Carousel }
+}
+</script>
 
 <style scoped>
 .aboutImg1,
