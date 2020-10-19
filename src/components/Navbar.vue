@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-*{
+* {
   font-weight: 600;
   font-size: 14px;
 }
