@@ -33,10 +33,10 @@ export default {
   height: 78vw;
 }
 .aboutImg1 {
-  background: url("../assets/images/image-about-dark.jpg");
+  background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-dark.jpg");
 }
 .aboutImg2 {
-  background: url("../assets/images/image-about-light.jpg");
+  background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-light.jpg");
 }
 .aboutCard {
   padding: 70px 48px;
