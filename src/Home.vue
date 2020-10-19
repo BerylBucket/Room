@@ -1,4 +1,5 @@
 <template>
+<div>
   <Carousel></Carousel>
   <section id="about">
     <div class="aboutImg1"></div>
@@ -15,6 +16,7 @@
     </div>
     <div class="aboutImg2"></div>
   </section>
+</div>
 </template>
 
 <script>
