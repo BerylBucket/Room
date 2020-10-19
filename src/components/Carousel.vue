@@ -92,7 +92,8 @@ export default {
       } else {
         size = "mobile-";
       }
-      var url = "url(" + require("../../assets/images/" + size + this.curImg) + ")";
+      var url =
+        "url(" + require("../../assets/images/" + size + this.curImg) + ")";
       return { "background-image": url, "background-size": "100% 100%" };
     },
   },
