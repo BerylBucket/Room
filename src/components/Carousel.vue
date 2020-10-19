@@ -22,6 +22,81 @@
 </section>
 </template>
 
+<script>
+  import Navbar from "./Navbar";
+  export default {
+  data() {
+  return {
+    width: 0,
+    curSlide: 0,
+    curH1: "Discover innovative ways to decorate",
+    curP:
+      "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+    curImg: "image-hero-1.jpg",
+    slideText: [
+      {
+        h1: "Discover innovative ways to decorate",
+        p:
+          "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+        img: "image-hero-1.jpg"
+      },
+      {
+        h1: "We are available all across the globe",
+        p:
+          "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
+        img: "image-hero-2.jpg"
+      },
+      {
+        h1: "Manufactured with the best materials",
+        p:
+          "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
+        img: "image-hero-3.jpg"
+      }
+    ]
+  }
+ },
+ methods: {
+    changeSlide(dir) {
+      this.trns = false;
+      this.curSlide = dir + this.curSlide;
+      var slide = this.curSlide;
+      if (slide === 3) {
+        slide = 0;
+      } else if (slide === -1) {
+        slide = 2;
+      } else {
+      }
+      this.curH1 = this.slideText[slide].h1;
+      this.curP = this.slideText[slide].p;
+      this.curImg = this.slideText[slide].img;
+      this.curSlide = slide;
+    }
+  },
+  created() {
+    this.width = window.innerWidth;
+    window.addEventListener("resize", () => {
+      this.width = window.innerWidth;
+    });
+  },
+  computed: {
+    imgStyle() {
+      var size;
+      if (this.width > 376) {
+        size = "desktop-";
+      } else {
+        size = "mobile-";
+      }
+      var url =
+        "url(https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/" +
+        size +
+        this.curImg +
+        ")";
+      return { "background-image": url, "background-size": "100% 100%" };
+    }
+  }
+}
+</script>
+
 <style scoped>
   .slideImg {
   width: 100%;
