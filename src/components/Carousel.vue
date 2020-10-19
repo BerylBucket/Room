@@ -12,18 +12,18 @@
         <a class="shopNowLink"
           >shop now
           <img
-            src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/arrow.svg"
+            src="/assets/icons/icon-arrow.svg"
             alt="shop now"
         /></a>
         <div class="controls">
           <a @click="changeSlide(-1)"
             ><img
-              src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/angleLeft.svg"
+              src="/assets/icons/icon-angle-left.svg"
               alt="previous"
           /></a>
           <a @click="changeSlide(1)">
             <img
-              src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/icons/icon-angle-right.svg"
+              src="/assets/icons/icon-angle-right.svg"
               alt="next"
             />
           </a>
@@ -101,7 +101,7 @@ export default {
         size = "mobile-";
       }
       var url =
-        "url(https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/" +
+        "url(/assets/images/" +
         size +
         this.curImg +
         ")";
