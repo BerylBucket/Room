@@ -1,18 +1,12 @@
 <template>
   <div class="navbar">
-    <img
-      class="logo"
-      src="/assets/logo.svg"
-    />
+    <img class="logo" src="/assets/logo.svg" />
     <a class="burger" @click="active = true"
-      ><img
-        src="/assets/icons/burger.svg"
+      ><img src="/assets/icons/burger.svg"
     /></a>
     <div class="links" :class="{ active: active }">
       <a class="close" @click="active = false"
-        ><img
-          src="/assets/icons/icon-close.svg"
-          alt="close"
+        ><img src="/assets/icons/icon-close.svg" alt="close"
       /></a>
       <a>home</a>
       <a>shop</a>
