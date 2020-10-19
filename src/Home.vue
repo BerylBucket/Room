@@ -79,12 +79,12 @@ export default {
     padding: 60px 48px;
   }
   .aboutImg1 {
-    background: url("../assets/images/image-about-dark-tablet.jpg");
+    background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-dark-tablet.jpg");
     background-size: 100% 100%;
     box-shadow: inset 0 0 0 300px rgba(0, 0, 0, 0.6);
   }
   .aboutImg2 {
-    background: url("../assets/images/image-about-light-tablet.JPG");
+    background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-light-tablet.JPG");
     background-size: 100% 100%;
   }
   .aboutImg1,
@@ -98,12 +98,12 @@ export default {
     margin: auto;
   }
   .aboutImg1 {
-    background: url("../assets/images/image-about-dark.jpg");
+    background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-dark.jpg");
     background-size: 100% 100%;
     box-shadow: inset 0 0 0 1px transparent;
   }
   .aboutImg2 {
-    background: url("../assets/images/image-about-light.jpg");
+    background: url("https://raw.githubusercontent.com/BerylBucket/Room/main/assets/images/image-about-light.jpg");
     background-size: 100% 100%;
   }
   .aboutImg1,
