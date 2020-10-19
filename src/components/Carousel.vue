@@ -1,64 +1,75 @@
 <template>
-<div>
-  <section id="slider">
-  <transition name="slide-fade" mode="out-in">
-  <div :key="curP" class="slideImg" :style="imgStyle">
-      <Navbar></Navbar>
+  <div>
+    <section id="slider">
+      <transition name="slide-fade" mode="out-in">
+        <div :key="curP" class="slideImg" :style="imgStyle">
+          <Navbar></Navbar>
+        </div>
+      </transition>
+      <div class="slide">
+        <h1>{{ curH1 }}</h1>
+        <p>{{ curP }}</p>
+        <a class="shopNowLink"
+          >shop now
+          <img
+            src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/arrow.svg"
+            alt="shop now"
+        /></a>
+        <div class="controls">
+          <a @click="changeSlide(-1)"
+            ><img
+              src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/angleLeft.svg"
+              alt="previous"
+          /></a>
+          <a @click="changeSlide(1)">
+            <img
+              src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/icons/icon-angle-right.svg"
+              alt="next"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
-  </transition>
-  <div class="slide">
-    <h1>{{curH1}}</h1>
-    <p>{{curP}}</p>
-    <a class="shopNowLink">shop now
-      <img src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/arrow.svg" alt="shop now"/></a>
-    <div class="controls">
-      <a @click="changeSlide(-1)"><img src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/angleLeft.svg" alt="previous"/></a>
-      <a @click="changeSlide(1)">
-       <img src="https://raw.githubusercontent.com/BerylBucket/Room/main/assets/icons/icon-angle-right.svg" alt="next"/>
-      </a>
-    </div>
-  </div>
-</section>
-</div>
 </template>
 
 <script>
-  import Navbar from "./Navbar";
-  export default {
+import Navbar from "./Navbar";
+export default {
   components: {
-  Navbar
-},
+    Navbar,
+  },
   data() {
-  return {
-    width: 0,
-    curSlide: 0,
-    curH1: "Discover innovative ways to decorate",
-    curP:
-      "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
-    curImg: "image-hero-1.jpg",
-    slideText: [
-      {
-        h1: "Discover innovative ways to decorate",
-        p:
-          "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
-        img: "image-hero-1.jpg"
-      },
-      {
-        h1: "We are available all across the globe",
-        p:
-          "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
-        img: "image-hero-2.jpg"
-      },
-      {
-        h1: "Manufactured with the best materials",
-        p:
-          "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
-        img: "image-hero-3.jpg"
-      }
-    ]
-  }
- },
- methods: {
+    return {
+      width: 0,
+      curSlide: 0,
+      curH1: "Discover innovative ways to decorate",
+      curP:
+        "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+      curImg: "image-hero-1.jpg",
+      slideText: [
+        {
+          h1: "Discover innovative ways to decorate",
+          p:
+            "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+          img: "image-hero-1.jpg",
+        },
+        {
+          h1: "We are available all across the globe",
+          p:
+            "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
+          img: "image-hero-2.jpg",
+        },
+        {
+          h1: "Manufactured with the best materials",
+          p:
+            "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
+          img: "image-hero-3.jpg",
+        },
+      ],
+    };
+  },
+  methods: {
     changeSlide(dir) {
       this.trns = false;
       this.curSlide = dir + this.curSlide;
@@ -73,7 +84,7 @@
       this.curP = this.slideText[slide].p;
       this.curImg = this.slideText[slide].img;
       this.curSlide = slide;
-    }
+    },
   },
   created() {
     this.width = window.innerWidth;
@@ -95,13 +106,13 @@
         this.curImg +
         ")";
       return { "background-image": url, "background-size": "100% 100%" };
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .slideImg {
+.slideImg {
   width: 100%;
   height: 102vw;
   background-size: 100% 100%;
@@ -162,7 +173,7 @@ p {
   .controls {
     top: -66px;
   }
-  .controls a{
+  .controls a {
     padding: 21px 24px;
   }
 }
